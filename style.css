@@ -1,9 +1,22 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 img{
     width: 500px;
 }
 
 body{
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: bisque;
+}
+
+.socials{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.socials img{
+    width: 30px;
 }
