@@ -1,3 +1,11 @@
+:root{
+    --main-text-color: #000000;
+
+    --background-color: bisque;
+    
+    --header-color: #800080;
+}
+
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -9,6 +17,96 @@ img{
 body{
     text-align: center;
     background-color: bisque;
+    color: var(--main-text-color);
+
+    background-image: linear-gradient(45deg, blue, purple);
+}
+
+header{
+    text-align: right;
+    background-color: var(--header-color);
+    vertical-align: top;
+
+    margin: 30px;
+}
+
+footer{
+    border: solid 5px rgb(0, 198, 255);
+
+    text-align: center;
+
+    vertical-align: bottom;
+
+    margin: 80px;
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "a c"
+    "b c";
+    gap: 10px;
+    margin: 30px;
+    background-color: var(--background-color);
+
+    height: 300px;
+}
+
+.first{
+    grid-area: a;
+    background-color: antiquewhite;
+    color: #000000;
+}
+
+.second{
+    grid-area: b;
+    background-color: blue;
+    color: white;
+}
+
+.third{
+    grid-area: c;
+    background-color: red;
+    color: orchid;
+}
+
+.box{
+    padding: 5px;
+    margin: 0px;
+
+    border: none;
+    border-radius: 3px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.animated{
+    animation: wobble 1s ease-in-out infinite alternate;
+}
+
+@keyframes wobble {
+    0%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: grid;
+}
+
+.flex-box{
+    background-color: beige;
+    padding: 20px;
+    color: black;
 }
 
 .socials{
